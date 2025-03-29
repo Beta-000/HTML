@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border: 3px solid rgb(62, 13, 8);
+            border-collapse: collapse;
+            width: 400px;
+            height: 200px;
+            font: 14px Arial, Helvetica, sans-serif;
+        }
+        th, td {
+            border: 1px solid rgb(189, 188, 188);
+            vertical-align: middle;
+            padding: 4px;
+        }
+        td:first-child {
+            border-left: none;
+        }
+        td:last-child {
+            border-right: none;
+        }
+        tfoot > tr > th, tfoot > tr > td {
+            border-bottom: none;
+        }
+        thead >tr >th {
+            border-top: none;
+        }
+        thead >tr >th:first-child {
+            border-left: none;
+        }
+        thead >tr >th:last-child {
+            border-right: none;
+        }
+        tfoot >tr >th:first-child {
+            border-left: none;
+        }
+        tfoot, thead {
+            background-color: rgb(188, 143, 143);
+        }
+        tfoot > tr > th, thead >tr >th {
+            font-weight: bolder;
+        }
+        .num {
+            text-align: right;
+            width: 100px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="teste">Estado</th>
+                <th>Populações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.500.560</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">3.800.920</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">1.600.700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total:</th>
+            <td class="num">1.000.000</td>
+        </tfoot>
+    </table>
+</body>
+</html>
